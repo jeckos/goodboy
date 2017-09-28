@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Boy</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav id="navbar-header">
+            	<div class="content">
+                <ul id="menu">
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Questions</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <input type="checkbox" id="menu-bar" >
+                <label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <a href="#" class="btn">Promotions & offers</a>
+        </div>
+        </div>
+        <hr color='#e2e2e2' size='1'>
+        </nav>
+        <div class="container">
+        	<div class="content">
+            <div class="goodboy">
+            	
+                <div class="logo">
+                    <img src="img/dog-logo.png" alt="">
+                    <p>Who is a good boy company</p>
+                </div>
+                <p>We do
+                    <br>beautiful things</p>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <section id="slider" class="slider-header">
+        <div>
+            <div class="overlay"></div>
+            <img src="img/slider/1.jpg">
+            <div class="container">
+                <div class="content">
+                    <h1>Kepp calm your mind. <br>
+Let the whole world listen to you</h1>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="overlay"></div>
+            <img src="img/slider/2.jpg">
+        </div>
+        <div>
+            <div class="overlay"></div>
+            <img src="img/slider/3.jpg">
+        </div>
+    </section>
+    <section id="what">
+        <div class="container">
+            <div class="wrapper">
+                <div class="content">
+                    <h2>What we do<span>We are company</span></h2>
+                    <p>Shakespeare was born and brought up in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna, and twins Hamnet and Judith. Sometime between 1585 and 1592, he began a successful career in London as an actor, writer, and part-owner of a playing company called the Lord Chamberlain's Men, later known as the King's Men.</p>
+                    <p>He appears to have retired to Stratford around 1613, at age 49, where he died three years later. Few records of Shakespeare's private life survive, which has stimulated considerable speculation about such matters as his physical appearance, sexuality, religious beliefs, and whether the works attributed to him were written by others.</p>
+                </div>
+                <div class="section-img">
+                    <img src="img/what_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="readmore">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="content">
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                    <div class="section-color">
+                        <p>All our works are made with soul by professionals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="principles">
+        <div class="container">
+            <div class="photo-bg"></div>
+            <div class="wrapper">
+                <div class="content">
+                    <h2>Principles <br>of our work</h2>
+                    <p>Many of his plays were published in editions of varying quality and accuracy during his lifetime. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="wrapper">
+                <p>© 2017 Company</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.slider-header').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            dots: true,
+            pauseOnFocus: false
+        });
+    });
+    </script>
+    <script>
+    	var bar = $("label[for='menu-bar']");
+    	bar.click(function(){
+    		bar.toggleClass("showed active");
+    	
+    			$("#menu").toggleClass("show");
+
+    		
+    	})
+    	console.log($("#menu"));
+
+    </script>
+</body>
+
+</html>
