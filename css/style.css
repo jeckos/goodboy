@@ -658,11 +658,12 @@ label[for='menu-bar'] {
     background-position: left; }
     #principles .photo-bg:before {
       display: none; }
-  footer .wrapper {
-    flex-direction: row;
-    box-sizing: border-box;
-    height: auto;
-    padding: 30px; } }
+  footer {
+    margin-bottom: -20px; }
+    footer .wrapper {
+      flex-direction: row;
+      box-sizing: border-box;
+      padding: 30px; } }
 
 /*
 ──██─███─████─█──█─████─███─────█─███
